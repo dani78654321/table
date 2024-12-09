@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b>Table</b> </h1>
+    <div class="r1">
+    Table value :- <input class="d1" type="number" id="dani" placeholder="Enter value"></div><br><br>
+    Table count :- <input class="d2"  type="number" id="daniy" placeholder="Enter value"><br><br>
+    <button class="d3" onclick="sub()"> Check The Table</button><br><br>
+    <table class="d4" id="checking"></table>
+    <script>
+ 
+      function sub(){
+let tab11 = Number (document.getElementById("dani").value);
+let tab22 = Number (document.getElementById("daniy").value);
+ 
+let khan = "";
+    for(let i = 1; i <= tab22; i++){
+        khan += `<tr><td>${tab11}</td><td>x</td><td>${i}</td><td>=</td><td>${tab11 * i}</td><tr>`
+
+    }
+          document.getElementById("checking").innerHTML = khan;
+
+
+      }
+
+
+    </script>
+
+</body>
+</html>
