@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+    padding-left: 500px;
+    justify-content: space-between;
+}
+h1{
+    font-style: italic;
+    font-family:serif;
+    font-display: 1000px;
+    color: red;
+}
+h1:hover{
+    color: yellow;
+}
+.d1{
+    color: blue;
+}
+.r1{
+    color: blue;
+}
+.d4{
+    color: brown;
+    border: solid white;
+}
